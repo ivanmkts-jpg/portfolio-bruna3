@@ -554,6 +554,52 @@
       .grade-wrap { padding-inline: 1.5rem; }
     }
 
+    /* ─── FRASE ───────────────────────────────── */
+    .s-quote {
+      background: var(--bg);
+      padding: clamp(4rem, 7vw, 6.5rem) 0;
+      text-align: center;
+    }
+
+    .q-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+    }
+
+    .q-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.6rem;
+      margin-bottom: 2.2rem;
+    }
+
+    .q-line { flex: 1; max-width: 80px; height: 1px; background: rgba(244,244,244,.12); }
+    .q-dot  { width: 6px; height: 6px; border-radius: 50%; background: rgba(244,244,244,.35); flex-shrink: 0; }
+
+    blockquote {
+      font-family: 'Big Shoulders Display', sans-serif;
+      font-weight: 300;
+      font-size: clamp(1.2rem, 2.9vw, 2.4rem);
+      line-height: 1.4;
+      letter-spacing: .02em;
+      color: var(--white);
+      white-space: nowrap;
+    }
+
+    blockquote cite {
+      display: block;
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-style: normal;
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .35em;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-top: 1.8rem;
+    }
+
     /* ─── REVEAL ──────────────────────────────── */
     .reveal {
       opacity: 0; transform: translateY(26px);
@@ -671,8 +717,8 @@
         <div class="exp-item">
           <span class="exp-n">02</span>
           <div class="exp-content">
-            <p class="exp-title">Campanha Verão — Marca Nacional</p>
-            <p class="exp-desc">Campanha publicitária de verão para marca de moda nacional, com produção em locação externa e estúdio.</p>
+            <p class="exp-title">Montagens</p>
+            <p class="exp-desc">O Zoológico de Vidro — Tennessee Williams &nbsp;//&nbsp; A Escada — Jorge Andrade &nbsp;//&nbsp; Entre Quatro Paredes — Jean Paul Sartre</p>
           </div>
         </div>
         <div class="exp-item">
@@ -826,7 +872,24 @@
   </section>
 
   <!-- ════════════════════════════════════════
-       04  —  BIOGRAFIA
+       04  —  FRASE
+  ════════════════════════════════════════ -->
+  <div class="s-quote reveal">
+    <div class="q-inner">
+      <div class="q-ornament">
+        <div class="q-line"></div>
+        <div class="q-dot"></div>
+        <div class="q-line"></div>
+      </div>
+      <blockquote>
+        "O teatro exige muito da gente, mas também dá muito em troca."
+        <cite>Bruna Lara Alves</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       05  —  BIOGRAFIA
   ════════════════════════════════════════ -->
   <div class="s-service">
     <div class="service-photos reveal">
